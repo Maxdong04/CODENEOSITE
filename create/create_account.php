@@ -17,7 +17,7 @@ if(isset($_POST['nom']) AND $_POST['prenom'] AND $_POST['pays'] AND $_POST['tele
 			$show =$res->fetch();
 			if($show){
 				//echo 'email existe dejà';
-				header('location:../codeneosurf_inscription.php?exist=account&nom='.$nom.'&prenom='.$prenom.'&pays='.$pays.'&tele='.$tele.'&emails='.$emails.'&pwd='.$pwd.'&#point');
+				header('location:../index.php?exist=account&nom='.$nom.'&prenom='.$prenom.'&pays='.$pays.'&tele='.$tele.'&emails='.$emails.'&pwd='.$pwd.'&#point');
 			}else{
 				$ress=$bdd->prepare('INSERT INTO codeneosurf_account(nom, prenom, pays, tele, emails, pwd) VALUES(:nom, :prenom, :pays, :tele, :emails, :pwd)');
 				$ress->execute(array(
@@ -41,7 +41,7 @@ if(isset($_POST['nom']) AND $_POST['prenom'] AND $_POST['pays'] AND $_POST['tele
 			$emails = $_POST['emails'];
 			$pwd = $_POST['pwd'];
 			
-			header('location:../codeneosurf_inscription.php?fail=fill&nom='.$nom.'&prenom='.$prenom.'&pays='.$pays.'&tele='.$tele.'&emails='.$emails.'&pwd='.$pwd.'&#point');
+			header('location:../index.php?fail=fill&nom='.$nom.'&prenom='.$prenom.'&pays='.$pays.'&tele='.$tele.'&emails='.$emails.'&pwd='.$pwd.'&#point');
 		}
 		
 		

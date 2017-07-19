@@ -13,7 +13,7 @@
 			$show =$res->fetch();
 			if($show){
 				$_SESSION['emails'] = $emails;
-				header('location:espace_membre.php');
+				header('location:codeneosurf_code_panel.php');
 			}else{
 				header('location:codeneosurf_connexion.php?fails=fill');
 			}	

@@ -21,6 +21,28 @@ a{text-decoration: none; color: black;}
 .start .pad{padding: 10px;}
 .start a{display: block; float: right; color: #006caf; text-decoration: underline; margin-left: 14px;}
 
+/* POP STARTS */
+
+.pop{position:fixed; width:100%; height:100%; background:url(../src/pop.png); z-index:100; display:none;}
+.pop .popin{padding:70px;}
+.pop .popin .popac{ width:55%; background:white; margin:auto; border-bottom:solid 4px #dbdbdb;}
+.pop .popin .popac .tit{ padding:20px; background:#f5f5f5; text-transform:uppercase; color:#33b5e0; font-size:18px;  }
+.pop .popin .popac .pcc{ padding:20px; color:silver; padding-bottom:0px; }
+.pop .popin .popac .pcc b{ font-family:arial; color:red; }
+.pop .popin .popac .pcc img{ width:60px; }
+.pop .popin .popac .pcc input{ width:100%; margin-bottom:20px; padding:12px; border:0px; border-bottom:solid 3px silver; background:transparent; font-family: 'Exo-Light'; font-size:18px; background:#f9f9f9; transition:border-bottom 0.8s;}
+.pop .popin .popac .pcc .subs{ background:#33b5e0; color:#5be7ff; font-weight:bold; }
+
+.this{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; margin: auto; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+.this span{ display: block; text-align: center; padding-top: 18px; font-size: 55px; color: #ed008c; font-weight: bold;}
+.this b{ display: block; text-align: center; padding-top: 5px; margin-top: 55px; font-size: 17px; color: white; font-weight: bold; font-family: arial; background: url(../src/line2.png) no-repeat center top ; background-size:40% auto;}
+.this b i{ font-size: 13px; font-style: normal; color:white; }
+.process{ overflow:auto; }
+.process #valo{ width:45%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; }
+.process #rest{ width:45%; float:right; color:gray; font-weight:bold; }
+
+/* POP ENDS */
+
 .cycle{width:100%; height:500px; overflow:hidden; background: url(../src/city.png) repeat-x bottom fixed #133a57; }
 .cycle .pad{padding:50px; color:white;} 
 .cycle .pad a{display:block; padding:18px; color:#60f1f9; width:300px; text-align:center; font-weight:bold; border-radius:3px; margin-top:15px; background:#33b5e0; font-size:18px; transition:background 0.5s;}
@@ -96,11 +118,11 @@ a{text-decoration: none; color: black;}
 
 .carte_pan{padding: 50px; padding-left: 0px; background: white; }
 .carte_pan .carte_in{overflow: auto;}
-.carte_pan .carte_in .box{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; float: left; margin-left: 55px; margin-bottom: 55px; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
-.carte_pan .carte_in .box:hover{ box-shadow:0px 15px 15px #366b7a; }
-.carte_pan .carte_in .box span{ display: block; text-align: center; padding-top: 18px; font-size: 55px; color: #ed008c; font-weight: bold;}
-.carte_pan .carte_in .box b{ display: block; text-align: center; padding-top: 5px; margin-top: 55px; font-size: 20px; color: #ffdff1; font-weight: bold; font-family: arial; background: url(../src/line2.png) no-repeat center top ; background-size:40% auto;}
-.carte_pan .carte_in .box b i{ font-size: 13px; font-style: normal; }
+.carte_pan .carte_in div{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; float: left; margin-left: 55px; margin-bottom: 55px; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+.carte_pan .carte_in div:hover{ box-shadow:0px 15px 15px #366b7a; }
+.carte_pan .carte_in div span{ display: block; text-align: center; padding-top: 18px; font-size: 55px; color: #ed008c; font-weight: bold;}
+.carte_pan .carte_in div b{ display: block; text-align: center; padding-top: 5px; margin-top: 55px; font-size: 20px; color: #ffdff1; font-weight: bold; font-family: arial; background: url(../src/line2.png) no-repeat center top ; background-size:40% auto;}
+.carte_pan .carte_in div b i{ font-size: 13px; font-style: normal; }
 
 .world{background: url(../src/wo.png) no-repeat center top #133a57; background-size:60% auto;}
 .world .world_in{width: 1000px; margin:auto; padding-top:400px; padding-bottom:60px; overflow:auto; background:;}
@@ -179,6 +201,32 @@ a{text-decoration: none; color: black;}
 .exist{padding:12px; background:#fff9f9; border:solid 1px #e9e9e9; margin-bottom:15px; color:red;}
 .existgood{padding:12px; background:#faffe8; border:solid 1px #e9e9e9; margin-bottom:15px; color:#95bf00;}
 .redige{background:#f9f9f9; border:0px; width:100%; width-max:100%; min-max:100%; border-bottom:solid 3px #cccccc; margin-bottom:15px; padding:15px; font-size:18px; font-family: 'Exo-Light';}
+
+.valicomm{padding:15px; background:#f9ffdd; font-size:20px; color:#7b9500; overflow:auto; border-bottom:solid 4px #dfebb8; }
+.valicomm span{ display:block; float:left; padding:10px; }
+.valicomm a{ display:block; float:right; background:#bfe800; color:white; padding:10px; border-radius:1px; transition:background 0.5s; }
+.valicomm a:hover{ background:#caf400; }
+
+.alert_box{position:fixed; top:200px; overflow:auto; width:100%; z-index:100;}
+.alert_box a{display:block; float:right; width:230px; background: url(../src/codealert.gif) no-repeat #bfe800; background-size:auto 100%; color:white; padding:12px; padding-left:75px;}
+
+.panel .panel_in .right .pad table{width:100%; padding:9px; background:#fbfdfd;}
+.panel .panel_in .right .pad table tr{background:#fbfdfd;}
+.panel .panel_in .right .pad table tr:hover{background:white;}
+.panel .panel_in .right .pad table  td{padding:8px; border-bottom:solid 3px white;}
+
+.panel .panel_in .pad table{width:100%; padding:9px; background:#fff9fd;}
+.panel .panel_in .pad table tr{background:#fff9fd;}
+.panel .panel_in .pad table tr:hover{background:white;}
+.panel .panel_in .pad table  td{padding:8px; border-bottom:solid 3px white;}
+
+.scrollit{overflow:auto; height:159px; background:;}
+
+.pax_how{padding:40px; background:white; overflow:auto; }
+.pax_how span{ display:block; float:left; width:25%; text-align:center; margin-bottom:10px; }
+.pax_how span img{ width:97%; }
+.pax_how span b{ display:block; padding:12px; border:solid 3px #33b5e0; width:50px; margin:auto; border-radius:40px; margin-bottom:15px; color:#33b5e0; }
+
 /* RESPONSIVE STARTS HERE */
 
 @media (max-width:1185px ) {
@@ -191,6 +239,8 @@ a{text-decoration: none; color: black;}
 	.comment .comment_in .com_box{ width:25%; float:left; text-align:center; float:left; background:; margin-bottom:25px; }
 	.comment .comment_in .com_box .com_box_border{ margin:auto; width:90%; border-radius:10px; border:solid 3px #33b5e0; background:white;}
 	.comment .comment_in .com_box .com_box_border em{ color:white; display:none;}
+	.pop .popin .popac{ width:65%; }
+
 }
 @media (max-width:1005px ) {
 	.world .world_in .carre{width: 25%; float:left; float:left; background:;}
@@ -207,6 +257,11 @@ a{text-decoration: none; color: black;}
 	.cycle{width:100%; height:350px; }
 }
 
+@media (max-width:950px ) {
+	.process #valo{ width:48%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; font-size:14px; }
+	.process #rest{ width:48%; float:right; color:gray; font-weight:bold; font-size:14px; }
+	.pop .popin .popac{ width:65%; }
+}
 @media (max-width:900px ) {
 	.panel{ padding: 20px; padding-bottom:30px;}
 	.cycle h3{font-size:30px;}
@@ -214,13 +269,27 @@ a{text-decoration: none; color: black;}
 	.comment .comment_in .com_box{ width:33%; float:left; text-align:center; float:left; background:; margin-bottom:25px; }
 	.comment .comment_in .com_box .com_box_border{ margin:auto; width:95%; border-radius:10px; border:solid 3px #33b5e0; background:white;}
 	.comment .comment_in .com_box .com_box_border em{ color:white; display:block;}
+	
+	.pax_how{padding:40px; background:white; overflow:auto; }
+	.pax_how span{ display:block; float:left; width:50%; text-align:center; }
+	.pax_how span img{ width:97%; }
+	.pax_how span b{ display:block; padding:12px; border:solid 3px #33b5e0; width:50px; margin:auto; border-radius:40px; margin-bottom:15px; color:#33b5e0; }
+	
 }
 @media (max-width:850px ) {
+	.pop .popin{padding:40px;}
 	.footin .right .newsl{ padding: 14px; border: 0px; margin-top: 13px; width: 95%; background: #091824; background-size:auto 100%; padding-left: 10px; border-radius: 3px 0px 0px 3px; color: #33b5e0; display: block; float: none; margin:auto; margin-top:20px; margin-bottom:20px; }
 	.footin .right .sub{ padding: 13px; border: 0px; margin-top: 13px; margin:auto; background: #33b5e0; display: block; float: none; font-weight: bold; width: 95%;}
 	.footin .right{width: 100%; float:none; overflow:auto;}
 	.footin .left{width: 100%;  float:none; overflow:auto; }
 	.playc{width:100%;}
+}
+@media (max-width:800px ) {
+	.pop .popin{padding:40px;}
+	.this{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; margin: auto; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+	.process #valo{ width:48%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; font-size:14px; }
+	.process #rest{ width:48%; float:right; color:gray; font-weight:bold; font-size:14px; }
+	.pop .popin .popac{ width:65%; }
 }
 @media (max-width:796px ) {
 	.world{background: url(../src/wo.png) no-repeat center top #133a57; background-size:85% auto;}
@@ -232,6 +301,13 @@ a{text-decoration: none; color: black;}
 	.world .world_in .how_to a{ display:block; width:280px; padding:18px; border:solid 3px #4edcfa; margin:auto; text-align:center; border-radius:2px; color:#4edcfa; font-weight:bold; transition:background 0.5s; float:none; }
 	.visa .visa_in .left{width: 100%; background: ; float:none; text-align:center;}
 	.visa .visa_in .right{width: 100%; background: ; float:none; text-align:center;}
+}
+@media (max-width:730px ) {
+	.pop .popin{padding:20px;}
+	.this{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; margin: auto; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+	.process #valo{ width:48%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; font-size:14px; }
+	.process #rest{ width:48%; float:right; color:gray; font-weight:bold; font-size:14px; }
+	.pop .popin .popac{ width:65%; }
 }
 @media (max-width:660px ) {
 	.panel{ background: #f9fafb; }
@@ -264,16 +340,29 @@ a{text-decoration: none; color: black;}
 }
 @media (max-width:552px ) {
 	.carte_pan{padding: 50px; padding-left: 50px; background: white; }
-	.carte_pan .carte_in .box{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; float: none; margin-left: 0px;  margin: auto; margin-bottom: 55px; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
-	.carte_pan .carte_in .box:hover{ box-shadow:0px 15px 15px #366b7a; }
-	.carte_pan .carte_in .box span{ display: block; text-align: center; padding-top: 18px; font-size: 55px; color: #ed008c; font-weight: bold;}
-	.carte_pan .carte_in .box b{ display: block; text-align: center; padding-top: 5px; margin-top: 55px; font-size: 20px; color: #ffdff1; font-weight: bold; font-family: arial; background: url(../src/line2.png) no-repeat center top ; background-size:40% auto;}
-	.carte_pan .carte_in .box b i{ font-size: 13px; font-style: normal; }
+	.carte_pan .carte_in div{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; float: none; margin-left: 0px;  margin: auto; margin-bottom: 55px; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+	.carte_pan .carte_in div:hover{ box-shadow:0px 15px 15px #366b7a; }
+	.carte_pan .carte_in div span{ display: block; text-align: center; padding-top: 18px; font-size: 55px; color: #ed008c; font-weight: bold;}
+	.carte_pan .carte_in div b{ display: block; text-align: center; padding-top: 5px; margin-top: 55px; font-size: 20px; color: #ffdff1; font-weight: bold; font-family: arial; background: url(../src/line2.png) no-repeat center top ; background-size:40% auto;}
+	.carte_pan .carte_in div b i{ font-size: 13px; font-style: normal; }
 	.comment .comment_in .com_box{ width:100%; float:left; text-align:center; float:left; background:; margin-bottom:25px; }
 	.comment .comment_in .com_box .com_box_border{ margin:auto; width:98%; border-radius:10px; border:solid 3px #33b5e0; background:white;}
 	.comment .comment_in .com_box .com_box_border em{ color:white; display:block;}
 	.comment{padding:20px; background:white;}
-}@media (max-width:424px ) {
+	
+	.pax_how{padding:40px; background:white; overflow:auto; }
+	.pax_how span{ display:block; float:left; width:100%; text-align:center; }
+	.pax_how span img{ width:100%; }
+	.pax_how span b{ display:block; padding:12px; border:solid 3px #33b5e0; width:50px; margin:auto; border-radius:40px; margin-bottom:15px; color:#33b5e0; }
+}
+@media (max-width:523px ) {
+	.pop .popin{padding:20px;}
+	.this{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; margin: auto; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+	.process #valo{ width:48%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; font-size:14px; }
+	.process #rest{ width:48%; float:right; color:gray; font-weight:bold; font-size:14px; }
+	.pop .popin .popac{ width:90%; }
+}
+@media (max-width:424px ) {
 	.logbox{display:none;}
 	.cycle{width:100%; height:200px; text-align:center; }
 	.cycle h3{font-size:18px;}
@@ -287,4 +376,12 @@ a{text-decoration: none; color: black;}
 	.world .world_in .carre{width: 50%; float:left; float:left; background:; margin-bottom:20px;}
 	.world .world_in .carre .round1{width:150px; margin:auto; height:150px; border-radius:230px; }
 	.block_pay img{float:left; margin-right:20px; margin-bottom:20px; width:100%;}
+}
+@media (max-width:376px ) {
+	.pop .popin{padding:20px;}
+	.this{height: 200px; width: 200px; border-radius: 100px; background: url(../src/neoc.png) no-repeat center center #33b5e0; background-size:100% auto; margin: auto; transition:box-shadow 0.4s; cursor:pointer; cursor:pointer; }
+	.process #valo{ width:48%; float:left; background:#33b5e0; color:#3ef5ff; font-weight:bold; font-size:14px; }
+	.process #rest{ width:48%; float:right; color:gray; font-weight:bold; font-size:14px; }
+	.pop .popin .popac{ width:90%; }
+	.pop .popin .popac .tit{ padding:20px; background:#f5f5f5; text-transform:uppercase; color:#33b5e0; font-size:14px;  }
 }

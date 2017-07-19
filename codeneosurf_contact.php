@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
+<?php include 'inc/logg.php'; ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,7 @@
 <body>
     <?php include 'inc/top.php'; ?>
     <div class="sep"></div>
+	<?php  include 'inc/commande_wait.php'; ?>
 	<div class="panel" style="background:white; padding-top:30px;">
         <div class="panel_in" style="background:white;">
             <div class="right">

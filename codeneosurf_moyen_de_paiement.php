@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
+<?php include 'inc/logg.php'; ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,7 @@
 <body>
     <?php include 'inc/top.php'; ?>
     <div class="sep"></div>
+	<?php  include 'inc/commande_wait.php'; ?>
 	<div class="title" style="padding-top:40px;">
         <h1>Moyens de paiement</h1> <br />
 		<span style="padding:20px;">Pour acheter un code Neosurf sur codeneosurf,com, vous pouvez utiliser l'un des paiements mobiles suivants: <br />Orange Money, MTN Mobile Money et Moov Money, <br /> Ou par mandat: <br /> Wari, Western Union, Money Gram, Express Union international, Small World</span>

@@ -6,7 +6,7 @@
 				$res=$bdd->query('SELECT * FROM codeneosurf_codes WHERE etat="ok" ORDER BY ID ASC');
 				while($show =$res->fetch()){
 				echo '
-				<div class="box">
+				<div class="'.$show['prix'].'" id="'.$show['prix_cfa'].'">
 					<span>'.$show['prix'].'&euro;</span>
 					<b>'.$show['prix_cfa'].' <i>Fcfa</i></b>
 				</div>

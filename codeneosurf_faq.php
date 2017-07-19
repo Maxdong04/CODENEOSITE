@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
+<?php include 'inc/logg.php'; ?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,7 @@
 <body>
     <?php include 'inc/top.php'; ?>
     <div class="sep"></div>
+	<?php  include 'inc/commande_wait.php'; ?>
     <div class="title" style="padding-top:40px;">
         <h1>Faq <input type="text" placeholder="Rechercher une question..." class="seekfaq" id="seekfaq" /></h1> 
     </div>
